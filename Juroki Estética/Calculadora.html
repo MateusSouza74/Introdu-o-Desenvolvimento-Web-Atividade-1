@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Calculadora</title>
+        <link rel="shortcut icon" href="./assets/calculadora.png">
+        <link rel="stylesheet" type="text/css" href="./styles/calculadora.css">
+        <script src="./calculadora.js"></script>
+    </head>
+    <body>
+
+      <nav>
+        <div class="logo">
+            <h1>
+                Juroki <ion-icon name="accessibility-outline"></ion-icon>
+            </h1>
+        </div>
+        <div class="ícones">
+            <ul>
+                <li>
+                    <p>
+                         <a href="./home.html"><ion-icon name="home-outline"> </ion-icon> </a>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                     <a href="./Calculadora.html"> <ion-icon name="calculator-outline"></ion-icon> </a>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                         <a href="./formulario.html"> <ion-icon name="newspaper-outline"></ion-icon> </a>
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+        <main>
+        <section>
+        <div class="box-information">
+            <h1>Tabela de classificação de IMC</h1>
+    
+            <table>
+              <thead>
+                <tr>
+                  <th>IMC</th>
+                  <th>CLASSIFICAÇÃO</th>
+                  <th>OBESIDADE(GRAU)</th>
+                </tr>
+              </thead>
+    
+              <tbody>
+                <tr>
+                  <th>MENOR QUE 18,5</th>
+                  <th>MAGREZA</th>
+                  <th>0</th>
+                </tr>
+                <tr>
+                  <th>ENTRE 18,5 E 24,9</th>
+                  <th>NORMAL</th>
+                  <th>0</th>
+                </tr>
+                <tr>
+                  <th>ENTRE 25,0 E 29,9</th>
+                  <th>SOBREPESO</th>
+                  <th>1</th>
+                </tr>
+                <tr>
+                  <th>ENTRE 30,0 E 39,9</th>
+                  <th>OBESIDADE</th>
+                  <th>2</th>
+                </tr>
+                <tr>
+                  <th>MAIOR QUE 40,0</th>
+                  <th>OBESIDADE GRAVE</th>
+                  <th>3</th>
+                </tr>
+              </tbody>
+            </table>
+    
+            <p><strong>O que é IMC?</strong>
+                <br> 
+                IMC é a sigla para Índice de Massa Corporal, que é um cálculo que serve para avaliar se a pessoa está dentro do seu peso ideal em relação à altura.</p>
+    
+          </div>
+        <div id="calculadora">
+            <h1>Calcule seu IMC</h1>
+
+            <label for="altura">Altura (cm)</label> <br>
+            <input id="altura" name="altura" required="number" placeholder="Altura (cm)"> <br>
+
+            <label for="peso">Peso (kg)</label> <br>
+            <input id="peso" name="peso" required="number" placeholder="Peso (kg) "> <br>
+<br>
+            <input class="enviar" type="submit" value="Enviar" onclick="calcular()">
+            <div id="resultado">
+                Resultado.
+            </div>
+        </div>
+    </section>
+</main>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>
